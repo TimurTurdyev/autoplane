@@ -8,6 +8,7 @@
 /public/webfonts
 /public/images/vendor
 /storage/*.key
+/storage/*.json
 /vendor
 .env
 .env.backup
