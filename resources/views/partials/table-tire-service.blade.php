@@ -37,9 +37,9 @@
                 @foreach( $row as $key => $value )
                     @if( isset($colspan[$key]))
                         @if( $colspan[$key] > 1 )
-                            <td {{ $loop->index == 1 ? 'scope="row"' : '' }} colspan="{{ $colspan[$key] }}">{{ $value }}</td>
+                            <td {{ ($loop->index == 1 ? 'scope="row"' : '') }} colspan="{{ $colspan[$key] }}">{{ $value }}</td>
                         @else
-                            <td{{ $loop->index == 1 ? 'scope="row"' : '' }} >{{ $value }}</td>
+                            <td {{ ($loop->index == 1 ? 'scope="row"' : '') }} >{{ $value }}</td>
                         @endif
                         @continue
                     @endif
