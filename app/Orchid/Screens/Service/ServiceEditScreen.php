@@ -96,6 +96,28 @@ class ServiceEditScreen extends Screen
 
     private function getTable()
     {
+        if ($this->page->slug === 'tire-service') {
+            return Layout::rows([
+                Matrix::make('page.setting')
+                    ->title('Таблица расценок')
+                    ->columns([
+                        'Виды услуг' => 'services',
+                        'Л 12-16' => 'size1',
+                        'Л 17' => 'size2',
+                        'Л 18' => 'size3',
+                        'Л 19' => 'size4',
+                        'Л 20' => 'size5',
+                        'Л 21' => 'size6',
+                        'Л 22' => 'size7',
+                        'Г 15-18' => 'size8',
+                        'Г 19' => 'size9',
+                        'Г 20' => 'size10',
+                        'Г 21' => 'size11',
+                        'Г 22' => 'size12',
+                        'Г 23-26' => 'size13',
+                    ])
+            ]);
+        }
         return Layout::rows([
             Matrix::make('page.setting')
                 ->title('Таблица расценок')
