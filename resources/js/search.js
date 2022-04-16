@@ -2,7 +2,7 @@ $('input[type=search]').autocomplete({
     'source': function (request, response) {
         if (request === '') return;
         $.ajax({
-            url: location.origin + 'search/?q=' + encodeURIComponent(request),
+            url: location.origin + '/search/?q=' + encodeURIComponent(request),
             dataType: 'json',
             cache: false,
             success: function (json) {
