@@ -1,0 +1,330 @@
+.bg-black-opacity {
+    background: $bg-black-opacity;
+}
+
+.bg-orange {
+    background: $orange;
+}
+
+.menu {
+    .nav-link {
+        text-transform: uppercase;
+        font-size: large;
+        color: #ffffff;
+    }
+}
+
+.text-orange {
+    color: $orange;
+}
+
+a {
+    color: $orange;
+    text-decoration: none;
+
+    &:hover {
+        color: $orange;
+        text-decoration: underline;
+    }
+}
+header {
+    position: absolute;
+    width: 100%;
+}
+.header-2 {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        max-width: 300px;
+        position: relative;
+        top: -11px;
+    }
+
+    .contact {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16.2166px;
+        font-family: sans-serif;
+        line-height: 24px;
+        transform: scaleX(1.05375);
+
+        .phone {
+            font-size: 23.9989px;
+            transform: scaleX(1.1912);
+        }
+
+
+        > div {
+            padding: .5rem;
+        }
+    }
+}
+
+.content-top {
+    min-height: 100vh;
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .padding-top {
+        padding-top: 18rem;
+    }
+}
+
+.main_brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.sprite_brand {
+    background-image: url('/images/spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite_brand-acura {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -5px;
+}
+
+.sprite_brand-audi {
+    width: 60px;
+    height: 60px;
+    background-position: -75px -5px;
+}
+
+.sprite_brand-bmw {
+    width: 50px;
+    height: 50px;
+    background-position: -145px -5px;
+}
+
+.sprite_brand-cadillac {
+    width: 60px;
+    height: 60px;
+    background-position: -205px -5px;
+}
+
+.sprite_brand-chevrolet {
+    width: 60px;
+    height: 21px;
+    background-position: -275px -5px;
+}
+
+.sprite_brand-citroen {
+    width: 41px;
+    height: 37px;
+    background-position: -345px -5px;
+}
+
+.sprite_brand-datsun {
+    width: 60px;
+    height: 60px;
+    background-position: -396px -5px;
+}
+
+.sprite_brand-fiat {
+    width: 47px;
+    height: 49px;
+    background-position: -466px -5px;
+}
+
+.sprite_brand-ford {
+    width: 60px;
+    height: 21px;
+    background-position: -523px -5px;
+}
+
+.sprite_brand-greatwall {
+    width: 60px;
+    height: 59px;
+    background-position: -593px -5px;
+}
+
+.sprite_brand-honda {
+    width: 60px;
+    height: 60px;
+    background-position: -663px -5px;
+}
+
+.sprite_brand-hummer {
+    width: 60px;
+    height: 60px;
+    background-position: -733px -5px;
+}
+
+.sprite_brand-hyundai {
+    width: 60px;
+    height: 60px;
+    background-position: -803px -5px;
+}
+
+.sprite_brand-infiniti {
+    width: 60px;
+    height: 60px;
+    background-position: -873px -5px;
+}
+
+.sprite_brand-jaguar {
+    width: 60px;
+    height: 60px;
+    background-position: -943px -5px;
+}
+
+.sprite_brand-jeep {
+    width: 60px;
+    height: 60px;
+    background-position: -1013px -5px;
+}
+
+.sprite_brand-kia {
+    width: 60px;
+    height: 60px;
+    background-position: -1083px -5px;
+}
+
+.sprite_brand-lada {
+    width: 60px;
+    height: 60px;
+    background-position: -1153px -5px;
+}
+
+.sprite_brand-land_rover {
+    width: 60px;
+    height: 60px;
+    background-position: -1223px -5px;
+}
+
+.sprite_brand-lexus {
+    width: 60px;
+    height: 60px;
+    background-position: -1293px -5px;
+}
+
+.sprite_brand-mazda {
+    width: 49px;
+    height: 39px;
+    background-position: -1363px -5px;
+}
+
+.sprite_brand-mercedes {
+    width: 60px;
+    height: 60px;
+    background-position: -1422px -5px;
+}
+
+.sprite_brand-mini {
+    width: 60px;
+    height: 60px;
+    background-position: -1492px -5px;
+}
+
+.sprite_brand-mitsubishi {
+    width: 46px;
+    height: 40px;
+    background-position: -1562px -5px;
+}
+
+.sprite_brand-nissan {
+    width: 60px;
+    height: 60px;
+    background-position: -1618px -5px;
+}
+
+.sprite_brand-opel {
+    width: 58px;
+    height: 45px;
+    background-position: -1688px -5px;
+}
+
+.sprite_brand-peugeot {
+    width: 43px;
+    height: 45px;
+    background-position: -1756px -5px;
+}
+
+.sprite_brand-porsche {
+    width: 60px;
+    height: 60px;
+    background-position: -1809px -5px;
+}
+
+.sprite_brand-renault {
+    width: 37px;
+    height: 46px;
+    background-position: -1879px -5px;
+}
+
+.sprite_brand-seat {
+    width: 60px;
+    height: 49px;
+    background-position: -1926px -5px;
+}
+
+.sprite_brand-skoda {
+    width: 46px;
+    height: 46px;
+    background-position: -1996px -5px;
+}
+
+.sprite_brand-subaru {
+    width: 60px;
+    height: 60px;
+    background-position: -2052px -5px;
+}
+
+.sprite_brand-toyota {
+    width: 60px;
+    height: 60px;
+    background-position: -2122px -5px;
+}
+
+.sprite_brand-uaz {
+    width: 60px;
+    height: 60px;
+    background-position: -2192px -5px;
+}
+
+.sprite_brand-volkswagen {
+    width: 48px;
+    height: 48px;
+    background-position: -2262px -5px;
+}
+
+.sprite_brand-volvo {
+    width: 55px;
+    height: 52px;
+    background-position: -2320px -5px;
+}
+
+table  {
+    tr.border-0 {
+        &>* {
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+}
+
+.ql-align-center {
+    text-align: center;
+}
+.card-photo {
+    padding-bottom: 60%;
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
