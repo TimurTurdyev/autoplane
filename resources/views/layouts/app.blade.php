@@ -42,18 +42,19 @@
                     <div class="text-center">
                         <a href="tel:{{ phone_clear(setting('phone')) }}" class="phone"><i
                                 class="fa-solid fa-square-phone"></i> {{ setting('phone') }}</a>
-                        <div>ежедневно и круглосуточно</div>
+                        <div>{{ setting('working_hours') }}</div>
                     </div>
                     <div class="text-center">
                         <div>
                             <i class="fa-solid fa-location-dot"></i> БАЛАШИХА УЛ.КОЖЕДУБА, 13
                         </div>
-                        <a>(схема проезда)</a>
+                        <a href="{{ setting('location_map') }}" target="_blank">(схема проезда)</a>
                     </div>
                     <div class="d-md-flex flex-column text-right d-none">
-                        <a href=""><i class="fa-solid fa-envelope-circle-check text-white"></i> {{ setting('email') }}
+                        <a href="mailto:{{ setting('email') }}">
+                            <i class="fa-solid fa-envelope-circle-check text-white"></i> {{ setting('email') }}
                         </a>
-                        <a href="https://www.instagram.com/{{ setting('instagram') }}"><i
+                        <a href="https://www.instagram.com/{{ setting('instagram') }}" target="_blank"><i
                                 class="fa-brands fa-instagram text-white"></i> {{ '@' . setting('instagram') }}</a>
                     </div>
                 </div>

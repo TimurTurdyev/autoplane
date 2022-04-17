@@ -27,6 +27,8 @@ class SettingRequest extends FormRequest
             'phone' => 'required|string',
             'email' => 'required|string',
             'instagram' => 'nullable|string',
+            'working_hours' => 'nullable|string',
+            'location_map' => 'nullable|string',
         ];
     }
 }

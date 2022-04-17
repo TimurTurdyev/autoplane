@@ -24,6 +24,8 @@ class SettingScreen extends Screen
             'phone' => Setting::get('phone'),
             'email' => Setting::get('email'),
             'instagram' => Setting::get('instagram'),
+            'working_hours' => Setting::get('working_hours'),
+            'location_map' => Setting::get('location_map'),
         ];
     }
 
@@ -68,6 +70,10 @@ class SettingScreen extends Screen
                         ->title('Почта'),
                     Input::make('instagram')
                         ->title('Инстаграм'),
+                    Input::make('working_hours')
+                        ->title('Время работы'),
+                    Input::make('location_map')
+                        ->title('Ссылка на карту'),
                 ]))
                 ->title(__('Связь'))
                 ->description(__('Телефон, почта и т.д'))
