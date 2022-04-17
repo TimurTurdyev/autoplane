@@ -1,13 +1,15 @@
 $('input[type=search]').autocomplete({
     'source': function (request, response) {
         if (request === '') return;
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
         $.ajax({
             url: location.origin + '/search/?q=' + encodeURIComponent(request),
             dataType: 'json',
             cache: false,
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
-            },
             success: function (json) {
                 response($.map(json, function (item) {
                     return {
