@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <title>@stack('meta_title')</title>
     <base href="{{ asset('/') }}"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <meta name="description" content="@stack('meta_description')"/>
     <meta property="og:title" content="@stack('meta_title')"/>
     <meta property="og:type" content="website"/>

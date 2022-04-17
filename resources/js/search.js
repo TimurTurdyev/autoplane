@@ -5,6 +5,9 @@ $('input[type=search]').autocomplete({
             url: location.origin + '/search/?q=' + encodeURIComponent(request),
             dataType: 'json',
             cache: false,
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+            },
             success: function (json) {
                 response($.map(json, function (item) {
                     return {
