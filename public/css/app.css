@@ -10343,6 +10343,11 @@ header {
 .content-top .padding-top {
   padding-top: 18rem;
 }
+@media (max-width: 768px) {
+  .content-top .padding-top {
+    padding-top: 11rem;
+  }
+}
 
 .main_brand {
   display: flex;
