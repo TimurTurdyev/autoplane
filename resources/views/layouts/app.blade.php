@@ -78,10 +78,10 @@
                         <a class="nav-link" href="{{ route('page', 'about-us') }}">О нас</a>
                         <a class="nav-link" href="{{ route('page', 'contact') }}">Контакты</a>
                     </div>
-                    <form class="my-2 my-lg-0 order-lg-1 ms-auto w-auto js_form_search">
+                    <div class="my-2 my-lg-0 order-lg-1 ms-auto w-auto js_form_search">
                         <input class="form-control mr-sm-2 " type="search" placeholder="Поиск по сайту"
                                aria-label="Search">
-                    </form>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -167,6 +167,9 @@
         <li><a class="nav-link" href="{{ route('page', 'promotion') }}">Акции</a></li>
         <li><a class="nav-link" href="{{ route('page', 'about-us') }}">О нас</a></li>
         <li><a class="nav-link" href="{{ route('page', 'contact') }}">Контакты</a></li>
+    </ul>
+    <ul id="search-results">
+        <!-- insert ajax result here -->
     </ul>
 </nav>
 <script src="{{ asset('/dist/jquery/jquery.min.js') }}"></script>
