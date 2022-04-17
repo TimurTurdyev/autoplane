@@ -26,7 +26,7 @@
                    id="button-menu"><i class="fa-solid fa-ellipsis-vertical"></i> Меню</a>
                 <div class="collapse d-none d-lg-block">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Главная</a>
                         <a class="nav-link" href="#">Отзывы</a>
                         <a class="nav-link" href="{{ route('page', 'gallery') }}">Галерея работ</a>
                     </div>
