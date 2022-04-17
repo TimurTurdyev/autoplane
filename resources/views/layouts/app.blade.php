@@ -21,10 +21,10 @@
 <div id="page">
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container">
-                <a href="#main-menu" class="btn btn-outline-light px-3 mr-2 mr-sm-3 d-inline d-md-none"
+            <div class="container-md">
+                <a href="#main-menu" class="btn btn-outline-light px-3 mr-2 mr-sm-3 d-inline d-lg-none"
                    id="button-menu"><i class="fa-solid fa-ellipsis-vertical"></i> Меню</a>
-                <div class="collapse navbar-collapse d-none d-md-block">
+                <div class="collapse d-none d-lg-block">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Главная</a>
                         <a class="nav-link" href="#">Отзывы</a>
@@ -34,8 +34,8 @@
             </div>
         </nav>
         <nav class="bg-black-opacity my-3">
-            <div class="container header-2">
-                <div class="logo d-none d-md-block">
+            <div class="container-md header-2">
+                <div class="logo d-none d-lg-block">
                     <a href="{{ route('home') }}"><img src="{{ asset('/images/logo.png') }}" class="img-fluid"></a>
                 </div>
                 <div class="d-flex align-items-center contact">
@@ -50,7 +50,7 @@
                         </div>
                         <a>(схема проезда)</a>
                     </div>
-                    <div class="d-flex flex-column text-right">
+                    <div class="d-md-flex flex-column text-right d-none">
                         <a href=""><i class="fa-solid fa-envelope-circle-check text-white"></i> {{ setting('email') }}
                         </a>
                         <a href="https://www.instagram.com/{{ setting('instagram') }}"><i
@@ -59,8 +59,8 @@
                 </div>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg bg-orange menu d-none d-md-block">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg bg-orange menu d-none d-lg-block">
+            <div class="container-md">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -91,7 +91,7 @@
     @include('partials.yandexmap')
 
     <footer class="bg-dark">
-        <div class="container">
+        <div class="container-md">
             <div class="row py-5">
                 <div class="col-md-6">
                     <ul class="list-inline">
@@ -136,7 +136,7 @@
 
         </div>
         <div class="py-4 font-weight-light bg-secondary text-white">
-            <div class="container-fluid">
+            <div class="container-md">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-left">
                         <p class="mb-md-0">
