@@ -19,7 +19,7 @@ Route::get('/search', \App\Http\Controllers\SearchController::class)->name('sear
 Route::get('/car-wash', \App\Http\Controllers\PageController::class)->name('page');
 Route::get('/tire-service', \App\Http\Controllers\PageController::class)->name('page');
 Route::get('/auto-detailing', \App\Http\Controllers\PageController::class)->name('page');
-Route::get('/price', \App\Http\Controllers\PageController::class)->name('page');
+Route::get('/price', \App\Http\Controllers\PriceController::class)->name('page');
 // Static
 Route::get('/promotion', \App\Http\Controllers\PromotionController::class)->name('page');
 Route::get('/about-us', \App\Http\Controllers\PageController::class)->name('page');

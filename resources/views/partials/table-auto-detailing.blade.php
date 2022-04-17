@@ -1,5 +1,5 @@
 @if( $setting && !empty($setting['data0']) )
-    <table class="table">
+    <table class="table hideseek-data">
         <thead class="bg-orange text-white">
         <tr class="border-0">
             <th scope="col">
