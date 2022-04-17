@@ -1,0 +1,3 @@
+.matrix tbody textarea[name*=value0] {
+    min-width: 350px;
+}
