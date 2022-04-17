@@ -8,8 +8,12 @@ $('input[type=search]').autocomplete({
             }
         });
         $.ajax({
-            url: base + 'search/?q=' + encodeURIComponent(request),
+            url: base + 'search/',
             dataType: 'json',
+            method: 'POST',
+            data: {
+                q: encodeURIComponent(request)
+            },
             cache: false,
             success: function (json) {
                 response($.map(json, function (item) {

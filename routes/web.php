@@ -20,7 +20,7 @@ if (App::environment('production')) {
 // Home
 Route::get('/', \App\Http\Controllers\HomeController::class)->name('home');
 // Service
-Route::get('/search', \App\Http\Controllers\SearchController::class)->name('search');
+Route::post('/search', \App\Http\Controllers\SearchController::class)->name('search');
 Route::get('/car-wash', \App\Http\Controllers\PageController::class)->name('page');
 Route::get('/tire-service', \App\Http\Controllers\PageController::class)->name('page');
 Route::get('/auto-detailing', \App\Http\Controllers\PageController::class)->name('page');
