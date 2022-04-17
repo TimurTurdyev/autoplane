@@ -10,12 +10,9 @@ $(function() {
                 }
             });
             $.ajax({
-                url: base + 'search/',
+                url: base + 'search/?q=' + encodeURIComponent(request),
                 dataType: 'json',
-                method: 'POST',
-                data: {
-                    q: request
-                },
+                method: 'GET',
                 cache: false,
                 success: function (json) {
                     response($.map(json, function (item) {
