@@ -88,6 +88,9 @@ header {
 
     .padding-top {
         padding-top: 18rem;
+        @media (max-width: 768px) {
+            padding-top: 11rem;
+        }
     }
 }
 
