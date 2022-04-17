@@ -10,7 +10,7 @@
             @if( $page->name ||  $page->setting)
                 <div class="m-5 p-1 bg-black-opacity">
                     <h1 class="text-center mt-2 mb-3">{{ $page->heading ?? $page->name }}</h1>
-                    @includeIf('partials.table-' . $page->slug, ['table' => $page->setting])
+                    @includeIf('partials.table-' . $page->slug, ['setting' => $page->setting])
                 </div>
             @endif
             @if( $page->body )

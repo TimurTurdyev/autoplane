@@ -1,4 +1,4 @@
-@if( $table )
+@if( $setting && !empty($setting['data0']) )
     <table class="table table-bordered text-center">
         <thead class="bg-orange text-white">
         <tr>
@@ -23,10 +23,10 @@
         </tr>
         </thead>
         <tbody class="text-white">
-        @foreach( $table as $row )
+        @foreach( $setting['data0'] as $row )
             @if( count(array_filter($row, fn($item) => $item !== null)) == 1)
                 <tr class="border-0 text-center h5 bg-secondary">
-                    <th scope="row" colspan="14">{{ $row['services'] }}</th>
+                    <th scope="row" colspan="14">{{ $row['value0'] }}</th>
                 </tr>
                 @continue
             @endif

@@ -2,7 +2,10 @@
     <table class="table">
         <thead class="bg-orange text-white">
         <tr class="border-0">
-            <th scope="col">Категория автотранспорта</th>
+            <th scope="col">
+                Категория автотраспорта*<br>
+                <small>(*право определния категории остается за администратором, при отсутствии в каталоге)</small>
+                </th>
             <th scope="col">I группа</th>
             <th scope="col">II группа</th>
             <th scope="col">III группа</th>

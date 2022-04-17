@@ -50,7 +50,14 @@ class PageRequest extends FormRequest
     public function validated($key = null, $default = null)
     {
         $request_data = parent::validated($key, $default);
-        $request_data['setting'] = array_values($request_data['setting'] ?? []);
+
+        $settings = [];
+
+        foreach ($request_data['setting'] ?? [] as $key => $setting) {
+            $settings[$key] = is_array($setting) ? array_values($setting) : $setting;
+        }
+
+        $request_data['setting'] = $settings;
 
         return $request_data;
     }

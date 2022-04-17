@@ -7,6 +7,7 @@ return [
             'tire-service',
             'auto-detailing',
             'price',
+            'seasonal-tire-storage',
         ],
         'static' => [
             'home',

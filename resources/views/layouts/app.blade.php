@@ -65,15 +65,14 @@
                     <a class="nav-link" href="{{ route('page', 'car-wash') }}">Мойка</a>
                     <a class="nav-link" href="{{ route('page', 'tire-service') }}">Шиномонтаж</a>
                     <a class="nav-link" href="{{ route('page', 'auto-detailing') }}">Детейлинг</a>
+                    <a class="nav-link" href="{{ route('page', 'seasonal-tire-storage') }}">Хранение шин</a>
                     <a class="nav-link" href="{{ route('page', 'price') }}">Прайс</a>
                     <a class="nav-link" href="{{ route('page', 'promotion') }}">Акции</a>
                     <a class="nav-link" href="{{ route('page', 'about-us') }}">О нас</a>
                     <a class="nav-link" href="{{ route('page', 'contact') }}">Контакты</a>
                 </div>
-                <form class="input-group input-group-lg my-2 my-lg-0 order-lg-1 ms-auto w-auto js_form_search">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту" aria-label="Search">
-                    <button class="btn btn-outline-dark btn-lg my-2 my-sm-0" type="submit"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
+                <form class="my-2 my-lg-0 order-lg-1 ms-auto w-auto js_form_search">
+                    <input class="form-control mr-sm-2 " type="search" placeholder="Поиск по сайту" aria-label="Search">
                 </form>
             </div>
         </div>
