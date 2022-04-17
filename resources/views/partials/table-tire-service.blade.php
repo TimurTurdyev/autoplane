@@ -51,3 +51,6 @@
         </table>
     </div>
 @endif
+@if( $setting && !empty($setting['text0']) )
+    {!! $setting['text0'] !!}
+@endif
