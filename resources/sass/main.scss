@@ -1,3 +1,18 @@
+:root {
+    --mm-sidebar-expanded-size: 300px;
+}
+
+.mm-menu {
+    --mm-listitem-size: 50px;
+    --mm-navbar-size: 50px;
+}
+.mm-navbar_tabs span {
+    display: inline-block;
+    margin-left: 8px;
+}
+#main-menu:not(.mm-menu):not(.mm) {
+    display: none;
+}
 .bg-black-opacity {
     background: $bg-black-opacity;
 }
@@ -57,6 +72,9 @@ header {
 
         > div {
             padding: .5rem;
+            @media (max-width: 768px) {
+                padding: .5rem 0;
+            }
         }
     }
 }

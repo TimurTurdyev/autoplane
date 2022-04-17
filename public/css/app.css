@@ -10253,6 +10253,24 @@ readers do not read off random characters that represent icons */
   content: "\f63f";
 }
 
+:root {
+  --mm-sidebar-expanded-size: 300px;
+}
+
+.mm-menu {
+  --mm-listitem-size: 50px;
+  --mm-navbar-size: 50px;
+}
+
+.mm-navbar_tabs span {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+#main-menu:not(.mm-menu):not(.mm) {
+  display: none;
+}
+
 .bg-black-opacity {
   background: rgba(0, 0, 0, 0.431372549);
 }
@@ -10308,6 +10326,11 @@ header {
 }
 .header-2 .contact > div {
   padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  .header-2 .contact > div {
+    padding: 0.5rem 0;
+  }
 }
 
 .content-top {
