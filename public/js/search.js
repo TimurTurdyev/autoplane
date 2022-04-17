@@ -1,13 +1,14 @@
 $('input[type=search]').autocomplete({
     'source': function (request, response) {
         if (request === '') return;
+        var base = $('base').attr('href');
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
         $.ajax({
-            url: location.origin + '/search/?q=' + encodeURIComponent(request),
+            url: base + 'search/?q=' + encodeURIComponent(request),
             dataType: 'json',
             cache: false,
             success: function (json) {
@@ -22,6 +23,6 @@ $('input[type=search]').autocomplete({
         });
     },
     'select': function (item) {
-        location.href = location.origin + '/' + item.value;
+        location.href = base + item.value;
     }
 });
