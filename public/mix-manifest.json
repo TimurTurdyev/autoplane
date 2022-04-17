@@ -1,10 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/css/mansory.css": "/css/mansory.css",
-    "/css/owl-fix.css": "/css/owl-fix.css",
-    "/js/autocomplete.js": "/js/autocomplete.js",
-    "/js/search.js": "/js/search.js",
     "/dist/owl-carousel/LICENSE": "/dist/owl-carousel/LICENSE",
     "/dist/owl-carousel/README.md": "/dist/owl-carousel/README.md",
     "/dist/owl-carousel/owl.carousel.js": "/dist/owl-carousel/owl.carousel.js",
